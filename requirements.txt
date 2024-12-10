@@ -6,4 +6,4 @@ arrow
 streamlit-aggrid
 boto3
 plotly
-
+python-dotenv
