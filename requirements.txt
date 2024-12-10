@@ -1,0 +1,9 @@
+streamlit
+matplotlib
+pandas
+numpy
+arrow
+streamlit-aggrid
+boto3
+plotly
+

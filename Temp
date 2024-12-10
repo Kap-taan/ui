@@ -1,0 +1,21 @@
+st.subheader("Percentage of Trending Products in Orders")
+        # Create and display bar chart for trending products in orders
+        df_1 = pd.DataFrame(df['percentage_trending_in_orders'].values, df['outletcode'])
+        st.bar_chart(df_1)
+
+        st.markdown("---")
+
+        # Outlet vs Prince Ratio
+        st.subheader("Outlet v/s Prince Ratio")
+        df_2 = pd.DataFrame(df[['outletcode', 'prince_ratio']].set_index('outletcode'))
+        st.bar_chart(df_2)
+
+        st.markdown("---")
+
+        # Outlet vs Harsh Ratio
+        st.subheader("Outlet v/s Harsh Ratio")
+        df_3 = df[['outletcode', 'harsh_ratio']]
+        df_3.set_index('outletcode', inplace=True)
+        st.bar_chart(df_3)
+
+        st.divider()
